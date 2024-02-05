@@ -32,6 +32,7 @@ export default {
 
 
 
+
     .type {
         background-color: lightpink;
         font-weight: bold;
