@@ -20,4 +20,19 @@ export default {
     </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.type {
+    background-color: lightpink;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 3px 8px;
+    width: 45%;
+    font-size: 16px;
+
+}
+
+span {
+    color: gray;
+    font-size: 14px;
+}
+</style>
