@@ -1,6 +1,8 @@
 <script>
+import CardPokemon from './CardPokemon.vue';
 export default {
     name: 'AppMain',
+    components: { CardPokemon },
 
 };
 </script>
@@ -10,157 +12,11 @@ export default {
         <div class="row-container">
             <div class="row row-cols-2 row-cols-md-3 row-cols-xl-5 row-cols-xxl-6  gap-4 justify-content-center">
                 <div class="col">
-                    <div class="card bg-secondary-subtle">
-                        <div>
-                            <img src="https://img.pokemondb.net/artwork/large/charizard.jpg" alt="pokemon"
-                                class="img-fluid rounded">
-                        </div>
-                        <div class="p-2">
-                            <span>#001</span>
-                            <h4 class="text-center ">Charizard</h4>
-                            <div class="type">Fuoco</div>
-                        </div>
-
-
-                    </div>
+                    <CardPokemon />
                 </div>
-                <div class="col">
-                    <div class="card bg-secondary-subtle">
-                        <div>
-                            <img src="https://img.pokemondb.net/artwork/large/charizard.jpg" alt="pokemon"
-                                class="img-fluid rounded">
-                        </div>
-                        <div class="p-2">
-                            <span>#001</span>
-                            <h4 class="text-center ">Charizard</h4>
-                            <div class="type">Fuoco</div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-secondary-subtle">
-                        <div>
-                            <img src="https://img.pokemondb.net/artwork/large/charizard.jpg" alt="pokemon"
-                                class="img-fluid rounded">
-                        </div>
-                        <div class="p-2">
-                            <span>#001</span>
-                            <h4 class="text-center ">Charizard</h4>
-                            <div class="type">Fuoco</div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-secondary-subtle">
-                        <div>
-                            <img src="https://img.pokemondb.net/artwork/large/charizard.jpg" alt="pokemon"
-                                class="img-fluid rounded">
-                        </div>
-                        <div class="p-2">
-                            <span>#001</span>
-                            <h4 class="text-center ">Charizard</h4>
-                            <div class="type">Fuoco</div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-secondary-subtle">
-                        <div>
-                            <img src="https://img.pokemondb.net/artwork/large/charizard.jpg" alt="pokemon"
-                                class="img-fluid rounded">
-                        </div>
-                        <div class="p-2">
-                            <span>#001</span>
-                            <h4 class="text-center ">Charizard</h4>
-                            <div class="type">Fuoco</div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-secondary-subtle">
-                        <div>
-                            <img src="https://img.pokemondb.net/artwork/large/charizard.jpg" alt="pokemon"
-                                class="img-fluid rounded">
-                        </div>
-                        <div class="p-2">
-                            <span>#001</span>
-                            <h4 class="text-center ">Charizard</h4>
-                            <div class="type">Fuoco</div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-secondary-subtle">
-                        <div>
-                            <img src="https://img.pokemondb.net/artwork/large/charizard.jpg" alt="pokemon"
-                                class="img-fluid rounded">
-                        </div>
-                        <div class="p-2">
-                            <span>#001</span>
-                            <h4 class="text-center ">Charizard</h4>
-                            <div class="type">Fuoco</div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-secondary-subtle">
-                        <div>
-                            <img src="https://img.pokemondb.net/artwork/large/charizard.jpg" alt="pokemon"
-                                class="img-fluid rounded">
-                        </div>
-                        <div class="p-2">
-                            <span>#001</span>
-                            <h4 class="text-center ">Charizard</h4>
-                            <div class="type">Fuoco</div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-secondary-subtle">
-                        <div>
-                            <img src="https://img.pokemondb.net/artwork/large/charizard.jpg" alt="pokemon"
-                                class="img-fluid rounded">
-                        </div>
-                        <div class="p-2">
-                            <span>#001</span>
-                            <h4 class="text-center ">Charizard</h4>
-                            <div class="type">Fuoco</div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-secondary-subtle">
-                        <div>
-                            <img src="https://img.pokemondb.net/artwork/large/charizard.jpg" alt="pokemon"
-                                class="img-fluid rounded">
-                        </div>
-                        <div class="p-2">
-                            <span>#001</span>
-                            <h4 class="text-center ">Charizard</h4>
-                            <div class="type">Fuoco</div>
-                        </div>
-
-
-                    </div>
-                </div>
-
             </div>
+
+
         </div>
 
     </main>
