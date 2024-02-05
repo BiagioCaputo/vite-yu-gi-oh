@@ -18,7 +18,8 @@ export default {
             name: pokemon.name,
             image: pokemon.imageUrl,
             number: pokemon.number,
-            type: pokemon.type1
+            type1: pokemon.type1,
+            type2: pokemon.type2
 
           }
         })

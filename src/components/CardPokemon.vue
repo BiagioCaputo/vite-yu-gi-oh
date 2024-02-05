@@ -5,7 +5,8 @@ export default {
         name: String,
         image: String,
         numberPokedex: Number,
-        type1: String
+        type1: String,
+        type2: String
     }
 
 };
@@ -19,7 +20,10 @@ export default {
         <div class="p-2">
             <span>{{ numberPokedex }}</span>
             <h4 class="text-center ">{{ name }}</h4>
-            <div class="type">{{ type1 }}</div>
+            <div class="types d-flex">
+                <div class="type me-2">{{ type1 }}</div>
+                <div class="type bg-info" v-if="type2">{{ type2 }}</div>
+            </div>
         </div>
 
 
@@ -29,6 +33,7 @@ export default {
 <style lang="scss" scoped>
 .card {
     height: 100%;
+    position: relative;
 
     .img-box {
         height: 200px;
@@ -39,22 +44,27 @@ export default {
         width: 100%;
     }
 
-
-
+    h4 {
+        margin-bottom: 50px;
+    }
 
     .type {
-        background-color: lightpink;
         font-weight: bold;
         border-radius: 10px;
         padding: 3px 8px;
         width: 45%;
         font-size: 16px;
-
+        text-align: center;
+        background-color: coral;
     }
 
     span {
         color: gray;
         font-size: 14px;
+    }
+
+    .fire {
+        background-color: red;
     }
 }
 </style>
