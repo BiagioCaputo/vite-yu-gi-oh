@@ -13,7 +13,7 @@ export default {
 
 <template>
     <div class="card bg-secondary-subtle">
-        <div class="img-box">
+        <div class="img-box p-1">
             <img :src="image" :alt="name" class="img-fluid rounded">
         </div>
         <div class="p-2">
@@ -29,6 +29,15 @@ export default {
 <style lang="scss" scoped>
 .card {
     height: 100%;
+
+    .img-box {
+        height: 200px;
+    }
+
+    img {
+        height: 200px;
+        width: 100%;
+    }
 
 
 
