@@ -1,19 +1,25 @@
 <script>
 export default {
     name: 'pokemon card',
+    props: {
+        name: String,
+        image: String,
+        numberPokedex: Number,
+        type1: String
+    }
 
 };
 </script>
 
 <template>
     <div class="card bg-secondary-subtle">
-        <div>
-            <img src="https://img.pokemondb.net/artwork/large/charizard.jpg" alt="pokemon" class="img-fluid rounded">
+        <div class="img-box">
+            <img :src="image" :alt="name" class="img-fluid rounded">
         </div>
         <div class="p-2">
-            <span>#001</span>
-            <h4 class="text-center ">Charizard</h4>
-            <div class="type">Fuoco</div>
+            <span>{{ numberPokedex }}</span>
+            <h4 class="text-center ">{{ name }}</h4>
+            <div class="type">{{ type1 }}</div>
         </div>
 
 
@@ -21,18 +27,24 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.type {
-    background-color: lightpink;
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 3px 8px;
-    width: 45%;
-    font-size: 16px;
+.card {
+    height: 100%;
 
-}
 
-span {
-    color: gray;
-    font-size: 14px;
+
+    .type {
+        background-color: lightpink;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 3px 8px;
+        width: 45%;
+        font-size: 16px;
+
+    }
+
+    span {
+        color: gray;
+        font-size: 14px;
+    }
 }
 </style>

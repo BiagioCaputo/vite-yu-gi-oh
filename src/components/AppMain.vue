@@ -13,8 +13,9 @@ export default {
     <main class="d-flex align-items-center justify-content-center">
         <div class="row-container py-3">
             <div class="row row-cols-2 row-cols-md-3 row-cols-xl-5 row-cols-xxl-6  gap-4 justify-content-center">
-                <div class="col">
-                    <CardPokemon />
+                <div class="col" v-for="pokemon in store.pokemons" :key="pokemon.id">
+                    <CardPokemon :name="pokemon.name" :image="pokemon.image" :numberPokedex="pokemon.number"
+                        :type1="pokemon.type" />
                 </div>
             </div>
 
