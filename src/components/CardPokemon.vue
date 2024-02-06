@@ -36,12 +36,14 @@ export default {
     position: relative;
 
     .img-box {
-        height: 200px;
+        height: 220px;
+        display: flex;
+        justify-content: center;
     }
 
     img {
-        height: 200px;
-        width: 100%;
+        height: 100%;
+        width: auto;
     }
 
     h4 {
