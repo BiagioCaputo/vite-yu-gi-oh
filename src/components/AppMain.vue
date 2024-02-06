@@ -34,8 +34,8 @@ main {
         width: 80%;
         height: 800px;
         background-image: url('https://wallpapercave.com/wp/wp3170189.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-size: 50%;
+        background-repeat: repeat;
         border: 1px solid lightgreen;
         overflow-y: auto;
         overflow-x: hidden;

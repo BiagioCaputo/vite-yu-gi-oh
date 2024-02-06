@@ -24,7 +24,7 @@ export default {
                 "Water"
             ],
 
-            searchedType: 'All'
+            searchedType: '',
         }
     },
     emits: ['change-type']
@@ -35,10 +35,9 @@ export default {
 <template>
     <header class="p-3 text-end">
         <select name="type" @change="$emit('change-type', searchedType)" v-model="searchedType">
-            <option value="all">All</option>
+            <option value=''>All</option>
             <option v-for="(type, index) in this.types" :value="type">{{ type }}</option>
         </select>
-
     </header>
 </template>
 

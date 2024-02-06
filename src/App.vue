@@ -34,9 +34,13 @@ export default {
     },
 
     searchPokemonsType(searchedType) {
-      console.log('devo cercare', searchedType)
-      const searchedTypeEndpoint = `${endpoint}/?eq[type1]=${searchedType}`;
-      this.fetchPokemons(searchedTypeEndpoint)
+      if (!searchedType) {
+        this.fetchPokemons(endpoint)
+      }
+      else {
+        const searchedTypeEndpoint = `${endpoint}/?eq[type1]=${searchedType}`;
+        this.fetchPokemons(searchedTypeEndpoint)
+      }
     }
   },
 

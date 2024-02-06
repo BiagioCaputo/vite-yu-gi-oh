@@ -78,8 +78,8 @@ export default {
         background-color: blue;
     }
 
-    .Eletric {
-        background-color: #EED535;
+    .Electric {
+        background-color: yellow;
     }
 
     .Fairy {
