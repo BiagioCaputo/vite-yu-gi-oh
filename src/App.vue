@@ -3,10 +3,11 @@ import axios from 'axios';
 import { store } from './data/store';
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue'
 const endpoint = 'https://41tyokboji.execute-api.eu-central-1.amazonaws.com/dev/api/v1/pokemons';
 export default {
   name: 'Pokedex',
-  components: { AppMain, AppHeader },
+  components: { AppMain, AppHeader, AppFooter },
   data: () => ({ store }),
 
   methods: {
@@ -54,6 +55,7 @@ export default {
 <template>
   <AppHeader @change-type="searchPokemonsType" />
   <AppMain />
+  <AppFooter />
 </template>
 
 <style lang="scss">

@@ -32,7 +32,6 @@ main {
 
     .row-container {
         width: 80%;
-        height: 800px;
         background-image: url('https://wallpapercave.com/wp/wp3170189.jpg');
         background-size: 50%;
         background-repeat: repeat;

@@ -34,11 +34,20 @@ export default {
 
 <template>
     <header class="p-3 text-end">
-        <select name="type" @change="$emit('change-type', searchedType)" v-model="searchedType">
-            <option value=''>All</option>
-            <option v-for="(type, index) in this.types" :value="type">{{ type }}</option>
-        </select>
+        <div class="container d-flex justify-content-between">
+            <h1>Pokedex</h1>
+            <select name="type" class="select-type" @change="$emit('change-type', searchedType)" v-model="searchedType">
+                <option value=''>All</option>
+                <option v-for="type in this.types" :value="type">{{ type }}</option>
+            </select>
+        </div>
+        
     </header>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang= "scss" scoped>
+h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+</style>
