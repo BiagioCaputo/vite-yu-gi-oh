@@ -10,7 +10,7 @@ export default {
   data: () => ({ store }),
 
   methods: {
-    fetchPokemons() {
+    fetchPokemons(endpoint) {
       store.isLoading = true;
       axios.get(endpoint).then(res => {
         const pokemons = res.data.docs.map(pokemon => {
@@ -31,18 +31,24 @@ export default {
       }).then(() => {
         store.isLoading = false;
       })
+    },
+
+    searchPokemonsType(searchedType) {
+      console.log('devo cercare', searchedType)
+      const searchedTypeEndpoint = `${endpoint}/?eq[type1]=${searchedType}`;
+      this.fetchPokemons(searchedTypeEndpoint)
     }
   },
 
   created() {
-    this.fetchPokemons();
+    this.fetchPokemons(endpoint);
   }
 
 };
 </script>
 
 <template>
-  <AppHeader @searchType="" />
+  <AppHeader @change-type="searchPokemonsType" />
   <AppMain />
 </template>
 
