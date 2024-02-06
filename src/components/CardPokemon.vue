@@ -21,8 +21,8 @@ export default {
             <span>{{ numberPokedex }}</span>
             <h4 class="text-center ">{{ name }}</h4>
             <div class="types d-flex">
-                <div class="type me-2">{{ type1 }}</div>
-                <div class="type bg-info" v-if="type2">{{ type2 }}</div>
+                <div class="type me-2" :class="this.type1">{{ type1 }}</div>
+                <div class="type" v-if="type2" :class="this.type2">{{ type2 }}</div>
             </div>
         </div>
 
@@ -55,7 +55,6 @@ export default {
         width: 45%;
         font-size: 16px;
         text-align: center;
-        background-color: coral;
     }
 
     span {
@@ -63,8 +62,76 @@ export default {
         font-size: 14px;
     }
 
-    .fire {
-        background-color: red;
+    .Fire {
+        background-color: #FD7D25;
+    }
+
+    .Bug {
+        background-color: #719F3E;
+    }
+
+    .Dark {
+        background-color: #707070;
+    }
+
+    .Dragon {
+        background-color: blue;
+    }
+
+    .Eletric {
+        background-color: #EED535;
+    }
+
+    .Fairy {
+        background-color: #FCB8E9;
+    }
+
+    .Fighting {
+        background-color: #D56722;
+    }
+
+    .Flying {
+        background-color: lightblue;
+    }
+
+    .Ghost {
+        background-color: #7B62A3;
+    }
+
+    .Grass {
+        background-color: #9BCB50;
+    }
+
+    .Ground {
+        background-color: #FFFF6A;
+    }
+
+    .Ice {
+        background-color: #51C3E7;
+    }
+
+    .Normal {
+        background-color: gray;
+    }
+
+    .Poison {
+        background-color: #B97FC8;
+    }
+
+    .Rock {
+        background-color: #A38C22;
+    }
+
+    .Psychic {
+        background-color: #F366B9;
+    }
+
+    .Steel {
+        background-color: #9DB7B7;
+    }
+
+    .Water {
+        background-color: #4592C3;
     }
 }
 </style>
