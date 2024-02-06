@@ -42,7 +42,7 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
+  <AppHeader @searchType="" />
   <AppMain />
 </template>
 

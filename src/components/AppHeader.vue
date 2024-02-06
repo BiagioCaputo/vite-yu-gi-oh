@@ -22,16 +22,19 @@ export default {
                 "Rock",
                 "Steel",
                 "Water"
-            ]
+            ],
+
+            searchedType: 'All'
         }
-    }
+    },
+    emits: ['searchType']
 
 };
 </script>
 
 <template>
-    <header>
-        <select name="type">
+    <header class="p-3 text-end">
+        <select name="type" @change="$emit('searchtype', searchedType)" v-model="searchedType">
             <option value="all">All</option>
             <option v-for="(type, index) in this.types" :value="type">{{ type }}</option>
         </select>
